@@ -21,19 +21,28 @@ En todo momento el idioma aparecerá con un texto en cabecera de la página, as�
 
 ## Consideraciones
 * Se debe de mantener el idioma establecido entre la páginas
-* Podemos navegar de una págiana a otra
+* Podemos navegar de una página a otra
 * Al ir de sitio.php a index.php, se debe de perder el nonmbre de usuario y su password
 * Por defecto el idioma debe de ser el castellano
-* Intenta no repetir código, usa las funciones por favor
+* Intenta no repetir código, usa funciones.
 ## Otras consideraciones
+
 *Al realizar la práctica he tenido las siguientes  situaciones
-1.- El idioma para establecer a las funciones putenv y setlocale he tenido que establecer es_ES.utf8, fr_FR.utf8 ....
- Esta cuestin la he verificado por que veía que setlocale retornaba false, debe de retornar el valor establecido, si no es que no puede establecerlo 
+
+1 .- El idioma para establecer a las funciones putenv y setlocale he tenido que establecer es_ES.utf8, fr_FR.utf8 ....
+
+ Esta cuestiónn la he verificado por que veía que setlocale retornaba false, debe de retornar el valor establecido, si no, es que no puede establecerlo. 
+ 
  http://php.net/manual/es/function.setlocale.php
-2.- utf8, a veces no está bien reconocido, por lo que es mejor establecer el charset a ISO-8859-1
+ 
+2 .- utf8, a veces no está bien reconocido, por lo que es mejor establecer el charset a ISO-8859-1
+
   https://www.gnu.org/software/gettext/FAQ.html#nonascii_strings
+  
    En caso de hacer esto, habrá que ponerlo tanto en cada página como al generar los ficheros po (portable object)
+   
     xgettext --from-code=ISO-8859-1 --language=PHP -j messages.po /var/www/idiomas/index.php /var/www/idiomas/sitio.php xxx
+    
    Lo de xxx es por si hay mas ficheros    
    
  
