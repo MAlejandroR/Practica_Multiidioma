@@ -48,8 +48,9 @@ En todo momento el idioma aparecerá con un texto en cabecera de la página, as�
  
 
 
-## Ver eejmplo
- Podemos probar el ejemplo aquí
+## Ver ejemplo
+ Podemos probar el ejemplo aquí.
+ (A veces hay que recargar la página, para que coja bien el charset)
   http://manuel.infenlaces.com/distancia/practicas/practica_9_Multiidioma/
   
 
